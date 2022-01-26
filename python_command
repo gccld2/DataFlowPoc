@@ -1,0 +1,4 @@
+python main_pipeline_stream.py --runner DataFlow --project <PROJECT_NAME> --region <REGION_NAME>  --streaming --temp_location gs://dataflow_poc_bucket/tmp --staging_location gs://dataflow_p
+oc_bucket/staging --input_topic projects/<PROJECT_NAME>/topics/raw-random-data-poc --output_table <PROJECT_NAME>:<DS_NAME>.dataflow_poc --output_schema "id_resp_h:STRING,id_orig_h:STRING,ts:FLOAT,orig_count_per_day:INTEGER,avg_coun
+t_per_day:INTEGER,query:STRING,total_count_per_day:INTEGER,id_resp_p:STRING,id_orig_p:STRING,extracted_sourcetype:STRING,timestamp:NUMERIC,sig_name:STRING,file_name:STRING,index_name:STRING,sig_id:STRING,owner:STRING,query_timestamp:ST
+RING,unit:STRING,date_time:TIMESTAMP" --template_location gs://dataflow_poc_bucket/temp/template --experiment use_unsupported_python_version ?--requirements_file requirements.txt
