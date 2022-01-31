@@ -15,7 +15,7 @@ class DateFormatter(beam.DoFn):
         Simple processing function to parse the data and add a timestamp
         """
         parsed = json.loads(element.decode("utf8"))
-        parsed["date_time"] = datetime.fromtimestamp(parsed['ts']).strftime("%Y-%m-%d %H:%M:%S")
+        parsed["poc_datetime_formatted"] = datetime.fromtimestamp(parsed['ts']).strftime("%Y-%m-%d %H:%M:%S")
         yield parsed
 
 
