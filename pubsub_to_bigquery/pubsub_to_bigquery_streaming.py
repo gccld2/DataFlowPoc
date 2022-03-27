@@ -60,7 +60,7 @@ if __name__ == '__main__':
     logging.getLogger().setLevel(logging.INFO)
     try:
         pipeline = run()
-        print("\n PIPELINE RUNNING \n")
+        print("\n PIPELINE DEPLOYED \n")
     except (KeyboardInterrupt, SystemExit):
         raise
     # except:
